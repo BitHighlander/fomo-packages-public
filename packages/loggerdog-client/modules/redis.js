@@ -6,8 +6,6 @@ const config = require('../config/env.js')
 let TAG = " | REDIS-CONNECTION-MODULE | "
 const Redis = require('ioredis');
 
-
-
 let subscriber
 let publisher
 let redis
