@@ -1,6 +1,6 @@
 {
   "name": "default-redis",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "dependencies": {
     "ioredis": "^4.11.1",
     "redis": "^2.8.0",
