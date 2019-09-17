@@ -7,6 +7,10 @@ jobs:
       - image: mongo:4.2.0
     environment:
     steps:
+      - checkout
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@5'
       - run:
           name: test
           command: npm run test
