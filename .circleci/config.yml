@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/fomo-packages-public/.npmrc
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@5'
