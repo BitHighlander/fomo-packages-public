@@ -1,0 +1,9 @@
+{
+  "name": "default-redis",
+  "version": "0.0.4",
+  "dependencies": {
+    "ioredis": "^4.11.1",
+    "redis": "^2.8.0",
+    "then-redis": "^2.0.1"
+  }
+}

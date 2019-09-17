@@ -1,0 +1,28 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps:stretch
+    environment:
+    working_directory: ~/app
+    steps:
+      - run:
+          name: test
+          command: npm run test
+      - run:
+          name: bump version
+          command: npm run update-version
+      - run:
+          name: check-packages
+          command: npm run check-packages
+      - run:
+          name: publish
+          command: npm run publish-packages
+workflows:
+  version: 2
+  build-master:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master

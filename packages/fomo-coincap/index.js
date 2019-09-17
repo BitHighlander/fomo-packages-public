@@ -4,7 +4,7 @@
 
  */
 
-const TAG = " | coincap-api-client | "
+const TAG = " | fomo-coincap-api-client | "
 require('dotenv').config()
 const log = require('default-logger')()
 const https = require('https');

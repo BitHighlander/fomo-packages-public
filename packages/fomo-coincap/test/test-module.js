@@ -2,7 +2,7 @@ require("dotenv").config({path:"../.env"})
 let coincap = require("../index")
 
 
-// coincap.assets()
+// fomo-coincap.assets()
 //     .then(function(resp){
 //         console.log(resp)
 //     })

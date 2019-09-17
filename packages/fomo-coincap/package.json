@@ -1,10 +1,10 @@
 {
-  "name": "coincap",
-  "version": "0.0.2",
+  "name": "fomo-coincap",
+  "version": "0.0.4",
   "description": "A coincap module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo lol"
   },
   "keywords": [
     "coincap.io"
