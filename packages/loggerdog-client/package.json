@@ -1,6 +1,6 @@
 {
   "name": "loggerdog-client",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A datadog HTTP logger",
   "main": "index.js",
   "dependencies": {
