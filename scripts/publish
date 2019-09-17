@@ -12,7 +12,6 @@ publish() {
     local currentVersion=$(npm info $REPO | grep version: | cut -d"'" -f 2)
     if [ -z "$currentVersion" ]; then currentVersion="0.0.0"; fi
     echo "$name@$currentVersion -> $targetVersion"
-    echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/fomo-packages-public/packages/.npmrc
     if [ "$currentVersion" != "$targetVersion" ]; then npm publish $REPO; fi
   )
 }
