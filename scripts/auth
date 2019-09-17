@@ -1,0 +1,5 @@
+for d in $(find ./packages -maxdepth 1 -type d)
+do
+  #Do something, the directory is accessible with $d:
+  echo $d
+  echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > $d/.npmrc
